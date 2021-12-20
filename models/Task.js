@@ -1,9 +1,9 @@
-const { model, Schema } = require('mongoose');
+const { model, Schema } = require("mongoose");
 
 const TaskSchema = new Schema({
   name: {
     type: String,
-    required: [true, 'the name has to be provided'],
+    required: [true, "the name has to be provided"],
     trim: true,
     minlength: 3,
   },
@@ -13,4 +13,4 @@ const TaskSchema = new Schema({
   },
 });
 
-module.exports = model('Task', TaskSchema);
+module.exports = model("Task", TaskSchema);
